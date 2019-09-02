@@ -1,29 +1,30 @@
 import React from 'react';
-import AppBarMUI from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Button from '@material-ui/core/Button';
-import { ReactComponent as SBLogo } from '../assets/sb-logo.svg';
-import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import AppBar from '@material-ui/core/AppBar';
 import Box from '@material-ui/core/Box';
+import Button from '@material-ui/core/Button';
+import Avatar from '@material-ui/core/Avatar';
+import Toolbar from '@material-ui/core/Toolbar';
+import { ReactComponent as SBLogo } from '../assets/sb-logo.svg';
 
 import './AppBar.scss';
 
-function AppBar() {
+function AppBarWrapper() {
   return (
-    <AppBarMUI className="app-bar" position="static" elevation={2}>
+    <AppBar className="app-bar" position="static" elevation={0}>
       <Toolbar>
         <SBLogo className="sb-logo" />
         <div className="app-bar__spacer" />
-        <Button variant="contained" color="primary">
-          Export Video
-        </Button>
-        <Box mx={2}>
-          Saved Videos
+        <Box mr={2}>
+          <Button variant="contained" color="primary" elevation={0}>
+            Export Video
+          </Button>
         </Box>
-        <AccountCircleIcon fontSize="large" />
+        <Avatar>
+          {'G'}
+        </Avatar>
       </Toolbar>
-    </AppBarMUI>
+    </AppBar>
   );
 }
 
-export default AppBar;
+export default AppBarWrapper;

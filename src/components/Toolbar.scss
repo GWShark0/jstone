@@ -1,0 +1,13 @@
+.toolbar {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.toolbar__container {
+  display: inline-block;
+  padding: 4px;
+
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+}

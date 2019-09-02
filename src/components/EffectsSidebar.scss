@@ -1,0 +1,26 @@
+.effects-sidebar__panel {
+  &.MuiPaper-root {
+    &:first-child {
+      border-top-right-radius: 0;
+    }
+    &:last-child {
+      border-bottom-right-radius: 0;
+    }
+    &.Mui-expanded {
+      margin: 0;
+    }
+  }
+
+  .MuiExpansionPanelDetails-root {
+    display: grid;
+    grid-template-columns: 90px 90px;
+    grid-auto-rows: 64px;
+    grid-column-gap: 4px;
+    grid-row-gap: 4px;
+  }
+}
+
+.effect {
+  border: 1px solid #dbdbdb;
+  cursor: pointer;
+}

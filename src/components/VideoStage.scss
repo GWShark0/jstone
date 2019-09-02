@@ -1,0 +1,13 @@
+.video-stage {
+  flex: 1;
+  margin: 0 24px;
+
+}
+
+.video-stage__thumbnail {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+  overflow: hidden;
+  vertical-align: middle;
+}

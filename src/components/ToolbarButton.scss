@@ -1,0 +1,18 @@
+.toolbar-button {
+  vertical-align: middle;
+  display: inline-block;
+  padding: 8px 10px;
+  min-height: 40px;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  appearance: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  &:not(:last-child) {
+    border-right: 1px solid #dbdbdb;
+  }
+}
