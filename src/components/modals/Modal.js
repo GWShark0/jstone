@@ -5,6 +5,7 @@ import Fade from '@material-ui/core/Fade';
 import { makeStyles } from '@material-ui/core/styles';
 
 function ModalWrapper(props) {
+  const { open, children, ...rest } = props;
   const classes = useStyles();
 
   return (
@@ -13,13 +14,12 @@ function ModalWrapper(props) {
       closeAfterTransition
       BackdropComponent={Backdrop}
       BackdropProps={{ timeout: 500 }}
-      {...props}
+      open={open}
+      {...rest}
     >
-      <Fade in={props.open}>
+      <Fade in={open}>
         <div className={classes.paper}>
-          <h2>
-            Text modal
-          </h2>
+          {children}
         </div>
       </Fade>
     </Modal>
