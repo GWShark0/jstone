@@ -4,6 +4,8 @@ import EffectsSidebar from './EffectsSidebar';
 import Toolbar from './Toolbar';
 import VideoStage from './VideoStage';
 
+import TimelineControls from './TimelineControls';
+
 import './Main.scss';
 
 function Main() {
@@ -15,6 +17,7 @@ function Main() {
         <VideoStage />
         <EffectsSidebar />
       </div>
+      <TimelineControls />
     </main>
   );
 }

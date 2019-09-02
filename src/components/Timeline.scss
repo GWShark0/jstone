@@ -1,8 +1,42 @@
 .timeline {
-  position: fixed;
-  bottom: 0;
-  right: 0;
+  flex: 1;
+}
+
+.timeline__segments {
+  position: relative;
+  height: 140px;
+  flex: 1;
+  display: flex;
+}
+
+.timeline__segment {
+  border-top: 3px solid currentColor;
+  flex: 1;
+
+  border-right: 1px solid currentColor;
+
+  &:first-child {
+    border-left: 1px solid currentColor;
+  }
+}
+
+.timeline__progress {
+  position: absolute;
+  top: 0;
   left: 0;
-  height: 150px;
-  background-color: #666666;
+  width: 380px;
+  height: 100%;
+  border-top: 3px solid #ffe121;
+  border-right: 1px solid #ffe121;
+  background: linear-gradient(90deg, transparent 0%, rgba(#ffe121, 0.15) 100%);
+}
+
+.timeline__progress-handle {
+  fill: #ffe121;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(7px, -7px);
 }
